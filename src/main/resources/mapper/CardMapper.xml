@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.winterchen.dao.CardDao" >
+    <sql id="CARD_TABLE">
+    t_card
+  </sql>
+
+    <sql id="CARD_COLUMN">
+    userId,cardId,func_bmp
+  </sql>
+
+    <insert id="bindCard" parameterType="com.winterchen.model.CardDomain" >
+    INSERT INTO t_card(userId,cardId,func_bmp)values (#{userId},#{cardId},1)
+  </insert>
+
+    <select id="selectUsers" resultType="com.winterchen.model.CardDomain">
+        SELECT
+        userId,cardId,func_bmp
+        FROM
+        t_card
+    </select>
+
+    <select id="queryCardByUserId" resultType="com.winterchen.model.CardDomain">
+        select
+         userId,cardId,func_bmp
+        from
+        t_card
+        WHERE userId = #{userId} and cardId = #{cardId}
+    </select>
+    <select id="findCardByUserId" resultType="java.lang.Integer">
+        select
+         count(userId)
+        from
+        t_card
+        WHERE userId = #{userId} and cardId = #{cardId}
+    </select>
+
+    <select id="findRecordByUserIdAndCardId" resultType="java.lang.Integer">
+        select
+         count(userId)
+        from
+        t_card
+        WHERE userId = #{userId} and cardId = #{cardId}
+    </select>
+    <select id="queryCard" parameterType="java.lang.Integer" resultType="com.winterchen.model.CardDomain">
+        SELECT
+         userId,cardId,func_bmp
+        FROM
+        t_card
+        WHERE userId = #{userId} and func_bmp=1
+
+    </select>
+    <update id="unbindcard"  >
+        update t_card
+        set func_bmp=0
+        where userId = #{userId} and cardId = #{cardId}
+    </update>
+
+    <update id="updateFunc"   >
+        update t_card
+        set func_bmp=#{func}
+        where userId = #{userId} and cardId = #{cardId}
+    </update>
+
+
+
+</mapper>

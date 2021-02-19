@@ -32,6 +32,56 @@
       FROM
         <include refid="BASE_TABLE"/>
   </select>
+  <select id="selectUsersByname" resultType="com.winterchen.model.UserDomain">
+    SELECT
+    <include refid="BASE_COLUMN"/>
+    FROM
+    <include refid="BASE_TABLE"/>
+    where userName = #{name}
+  </select>
+
+  <select id="queryUsersByMobile" resultType="com.winterchen.model.UserDomain">
+    SELECT
+    <include refid="BASE_COLUMN"/>
+    FROM
+    <include refid="BASE_TABLE"/>
+    where phone = #{mobile}
+  </select>
+
+  <select id="queryMobile" parameterType="java.lang.String" resultType="java.lang.Integer">
+    SELECT
+       count(*)
+    FROM
+    <include refid="BASE_TABLE"/>
+    WHERE phone = #{mobile}
+
+  </select>
+  <select id="queryUserById" parameterType="java.lang.Integer" resultType="java.lang.Integer">
+    SELECT
+    count(userId)
+    FROM
+    <include refid="BASE_TABLE"/>
+    WHERE userId = #{userId}
+
+  </select>
+  <update id="updateMobile" parameterType="java.lang.String">
+    update
+    <include refid="BASE_TABLE"/>
+    set phone = #{newMobile}
+    where phone = #{oldMobile}
+  </update>
+  <update id="updatePasswd" parameterType="java.lang.String">
+    update
+    <include refid="BASE_TABLE"/>
+    set password = #{newPasswd}
+    where phone = #{mobile}
+  </update>
+  <delete id="deleteUser" parameterType="java.lang.String" >
+    delete
+    from <include refid="BASE_TABLE"/>
+    where  phone = #{mobile}
+
+  </delete>
 
 
 </mapper>

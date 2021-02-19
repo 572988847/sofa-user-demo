@@ -40,4 +40,9 @@ public class UserDomain {
     public void setPhone(String phone) {
         this.phone = phone == null ? null : phone.trim();
     }
+    @Override
+    public String toString()
+    {
+        return "userid:"+this.userId+" "+"userName:"+this.userName+" "+"phone:"+this.phone+" ";
+    }
 }
