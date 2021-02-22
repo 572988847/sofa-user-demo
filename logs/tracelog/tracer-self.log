@@ -1,0 +1,18 @@
+2021-02-20 16:11:02.012[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:11:02.124[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:11:02.124[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:11:46.354[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:11:46.466[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:11:46.466[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:29:45.372[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:29:45.485[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:29:45.485[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:36:35.570[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:36:35.682[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:36:35.682[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:36:54.537[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:36:54.650[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:36:54.650[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:50:28.406[INFO]  LOG_FILE_DIR is ./logs\tracelog
+2021-02-20 16:50:28.520[WARN]  rpc-client-stat.log configured stat_log_interval=60 second and default cycle=60
+2021-02-20 16:50:28.522[WARN]  rpc-server-stat.log configured stat_log_interval=60 second and default cycle=60

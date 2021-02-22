@@ -1,0 +1,120 @@
+2021-02-20 16:09:15,300 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:11:00,093 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:11:01,915 INFO  main                             - Registering component: reference:com.demo.service.user.UserService:#-2101310339
+2021-02-20 16:11:01,915 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:02,365 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:02,365 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:02,365 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:02,828 INFO  main                             - Registering component: service:com.demo.service.user.UserService
+2021-02-20 16:11:02,828 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:02,828 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:02,828 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:02,844 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:02,844 INFO  main                             - Register Service - com.demo.service.user.UserService
+2021-02-20 16:11:02,844 INFO  main                             - Registering component: service:com.demo.service.user.CardService:cardService
+2021-02-20 16:11:02,844 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:02,844 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:02,844 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:02,844 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:02,844 INFO  main                             - Register Service - com.demo.service.user.CardService:cardService
+2021-02-20 16:11:44,309 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:11:46,265 INFO  main                             - Registering component: reference:com.demo.service.user.UserService:#-1457081953
+2021-02-20 16:11:46,265 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:46,685 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:46,685 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:46,685 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:47,151 INFO  main                             - Registering component: service:com.demo.service.user.UserService
+2021-02-20 16:11:47,151 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:47,151 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:47,151 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.user.UserService.
+2021-02-20 16:11:47,166 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.user.UserService.
+2021-02-20 16:11:47,166 INFO  main                             - Register Service - com.demo.service.user.UserService
+2021-02-20 16:11:47,166 INFO  main                             - Registering component: service:com.demo.service.user.CardService:cardService
+2021-02-20 16:11:47,166 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:47,166 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:47,166 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:47,166 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.user.CardService:cardService.
+2021-02-20 16:11:47,166 INFO  main                             - Register Service - com.demo.service.user.CardService:cardService
+2021-02-20 16:22:22,125 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:26:52,101 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:27:55,011 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:28:46,408 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:29:43,487 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:29:45,273 INFO  main                             - Registering component: reference:com.demo.service.UserService:#1323232666
+2021-02-20 16:29:45,273 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:29:45,694 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:29:45,694 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.UserService.
+2021-02-20 16:29:45,710 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.UserService.
+2021-02-20 16:29:46,158 INFO  main                             - Registering component: service:com.demo.service.UserService
+2021-02-20 16:29:46,158 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:29:46,173 INFO  main                             - Register Service - com.demo.service.UserService
+2021-02-20 16:29:46,173 INFO  main                             - Registering component: service:com.demo.service.CardService:cardService
+2021-02-20 16:29:46,173 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:29:46,173 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:29:46,173 INFO  main                             - Register Service - com.demo.service.CardService:cardService
+2021-02-20 16:31:19,899 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:31:58,130 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:33:50,472 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:34:09,978 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:34:21,539 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:34:51,180 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:35:54,932 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:36:33,677 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:36:35,485 INFO  main                             - Registering component: reference:com.demo.service.UserService:#1203830195
+2021-02-20 16:36:35,486 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:35,908 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:35,908 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.UserService.
+2021-02-20 16:36:35,908 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.UserService.
+2021-02-20 16:36:36,353 INFO  main                             - Registering component: service:com.demo.service.UserService
+2021-02-20 16:36:36,353 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:36,353 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:36,353 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:36,369 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:36,369 INFO  main                             - Register Service - com.demo.service.UserService
+2021-02-20 16:36:36,369 INFO  main                             - Registering component: service:com.demo.service.CardService:cardService
+2021-02-20 16:36:36,369 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:36:36,369 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:36:36,369 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:36:36,369 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:36:36,369 INFO  main                             - Register Service - com.demo.service.CardService:cardService
+2021-02-20 16:36:52,696 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:36:54,457 INFO  main                             - Registering component: reference:com.demo.service.UserService:#893850359
+2021-02-20 16:36:54,457 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:54,875 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:54,875 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.UserService.
+2021-02-20 16:36:54,875 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.UserService.
+2021-02-20 16:36:55,344 INFO  main                             - Registering component: service:com.demo.service.UserService
+2021-02-20 16:36:55,344 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:55,344 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:55,344 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:36:55,344 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:36:55,360 INFO  main                             - Register Service - com.demo.service.UserService
+2021-02-20 16:36:55,361 INFO  main                             - Registering component: service:com.demo.service.CardService:cardService
+2021-02-20 16:36:55,361 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:36:55,361 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:36:55,361 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:36:55,361 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:36:55,361 INFO  main                             - Register Service - com.demo.service.CardService:cardService
+2021-02-20 16:50:26,499 INFO  main                             - SOFABoot Runtime Starting!
+2021-02-20 16:50:28,311 INFO  main                             - Registering component: reference:com.demo.service.UserService:#1259819599
+2021-02-20 16:50:28,312 INFO  main                             -  >>In Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:50:28,743 INFO  main                             -  >>In Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:50:28,743 INFO  main                             -  >>In Binding [jvm] Begins - com.demo.service.UserService.
+2021-02-20 16:50:28,745 INFO  main                             -  >>In Binding [jvm] Ends - com.demo.service.UserService.
+2021-02-20 16:50:29,222 INFO  main                             - Registering component: service:com.demo.service.UserService
+2021-02-20 16:50:29,223 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:50:29,226 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:50:29,226 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.UserService.
+2021-02-20 16:50:29,240 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.UserService.
+2021-02-20 16:50:29,240 INFO  main                             - Register Service - com.demo.service.UserService
+2021-02-20 16:50:29,241 INFO  main                             - Registering component: service:com.demo.service.CardService:cardService
+2021-02-20 16:50:29,241 INFO  main                             -  <<PreOut Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:50:29,241 INFO  main                             -  <<PreOut Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:50:29,241 INFO  main                             -  <<Out Binding [bolt] Begins - com.demo.service.CardService:cardService.
+2021-02-20 16:50:29,242 INFO  main                             -  <<Out Binding [bolt] Ends - com.demo.service.CardService:cardService.
+2021-02-20 16:50:29,242 INFO  main                             - Register Service - com.demo.service.CardService:cardService

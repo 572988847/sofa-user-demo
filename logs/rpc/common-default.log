@@ -1,0 +1,66 @@
+2021-02-20 16:11:01,980 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:20184
+2021-02-20 16:11:01,996 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:11:01,996 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:11:02,140 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:11:02,140 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:11:02,156 INFO  main                             - Refer consumer config : bolt://UserService: with bean id rpc-cfg-0
+2021-02-20 16:11:02,828 INFO  main                             - Export provider config : UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:11:02,844 INFO  main                             - Export provider config : CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:11:03,161 INFO  main                             - service published.  interfaceId[UserService]; protocol[bolt]
+2021-02-20 16:11:03,161 INFO  main                             - service published.  interfaceId[CardService]; protocol[bolt]
+2021-02-20 16:11:46,312 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:1848
+2021-02-20 16:11:46,332 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:11:46,338 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:11:46,466 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:11:46,466 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:11:46,483 INFO  main                             - Refer consumer config : bolt://UserService: with bean id rpc-cfg-0
+2021-02-20 16:11:47,151 INFO  main                             - Export provider config : UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:11:47,166 INFO  main                             - Export provider config : CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:11:47,471 INFO  main                             - service published.  interfaceId[UserService]; protocol[bolt]
+2021-02-20 16:11:47,487 INFO  main                             - service published.  interfaceId[CardService]; protocol[bolt]
+2021-02-20 16:29:45,339 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:21080
+2021-02-20 16:29:45,339 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:29:45,355 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:29:45,485 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:29:45,485 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:29:45,516 INFO  main                             - Refer consumer config : bolt://com.demo.service.UserService: with bean id rpc-cfg-0
+2021-02-20 16:29:46,173 INFO  main                             - Export provider config : com.demo.service.UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:29:46,173 INFO  main                             - Export provider config : com.demo.service.CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:29:46,499 INFO  main                             - Unexport provider config : com.demo.service.CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:29:46,499 INFO  main                             - Unexport provider config : com.demo.service.UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:29:48,490 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework catch JVM shutdown event, Run shutdown hook now.
+2021-02-20 16:29:48,490 INFO  SOFA-RPC-ShutdownHook            - UnRefer consumer config : bolt://com.demo.service.UserService: with bean id rpc-cfg-0
+2021-02-20 16:29:48,490 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: fault-tolerance
+2021-02-20 16:29:48,490 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer-resteasy
+2021-02-20 16:29:48,490 INFO  SOFA-RPC-ShutdownHook            - Uninstall Module: sofaTracer
+2021-02-20 16:29:48,490 WARN  SOFA-RPC-ShutdownHook            - SOFA RPC Framework has been release all resources ...
+2021-02-20 16:36:35,538 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:8472
+2021-02-20 16:36:35,538 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:36:35,554 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:36:35,682 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:36:35,682 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:36:35,715 INFO  main                             - Refer consumer config : bolt://com.demo.service.UserService: with bean id rpc-cfg-0
+2021-02-20 16:36:36,353 INFO  main                             - Export provider config : com.demo.service.UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:36:36,369 INFO  main                             - Export provider config : com.demo.service.CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:36:36,686 INFO  main                             - service published.  interfaceId[com.demo.service.CardService]; protocol[bolt]
+2021-02-20 16:36:36,686 INFO  main                             - service published.  interfaceId[com.demo.service.UserService]; protocol[bolt]
+2021-02-20 16:36:54,504 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:15304
+2021-02-20 16:36:54,521 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:36:54,521 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:36:54,666 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:36:54,666 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:36:54,681 INFO  main                             - Refer consumer config : bolt://com.demo.service.UserService: with bean id rpc-cfg-0
+2021-02-20 16:36:55,344 INFO  main                             - Export provider config : com.demo.service.UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:36:55,361 INFO  main                             - Export provider config : com.demo.service.CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:36:55,664 INFO  main                             - service published.  interfaceId[com.demo.service.CardService]; protocol[bolt]
+2021-02-20 16:36:55,664 INFO  main                             - service published.  interfaceId[com.demo.service.UserService]; protocol[bolt]
+2021-02-20 16:50:28,368 INFO  main                             - Welcome! Loading SOFA RPC Framework : 5.7.6_20200908155956, PID is:2404
+2021-02-20 16:50:28,377 INFO  main                             - Install Module: fault-tolerance
+2021-02-20 16:50:28,386 INFO  main                             - Install Module: sofaTracer-resteasy
+2021-02-20 16:50:28,526 INFO  main                             - The module lookout does not need to be loaded.
+2021-02-20 16:50:28,526 INFO  main                             - Install Module: sofaTracer
+2021-02-20 16:50:28,547 INFO  main                             - Refer consumer config : bolt://com.demo.service.UserService: with bean id rpc-cfg-0
+2021-02-20 16:50:29,229 INFO  main                             - Export provider config : com.demo.service.UserService::bolt with bean id rpc-cfg-1
+2021-02-20 16:50:29,242 INFO  main                             - Export provider config : com.demo.service.CardService:cardService:bolt with bean id rpc-cfg-2
+2021-02-20 16:50:29,563 INFO  main                             - service published.  interfaceId[com.demo.service.CardService]; protocol[bolt]
+2021-02-20 16:50:29,569 INFO  main                             - service published.  interfaceId[com.demo.service.UserService]; protocol[bolt]

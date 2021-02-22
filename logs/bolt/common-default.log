@@ -1,0 +1,17 @@
+2021-02-20 16:11:02,254 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.user.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:11:02,876 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:11:03,135 WARN  [AbstractRemotingServer#66] [main] Server started on port 12200
+2021-02-20 16:11:46,589 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.user.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:11:47,217 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:11:47,455 WARN  [AbstractRemotingServer#66] [main] Server started on port 12200
+2021-02-20 16:29:45,614 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:29:46,222 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:36:35,812 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:36:36,395 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:36:36,654 WARN  [AbstractRemotingServer#66] [main] Server started on port 12200
+2021-02-20 16:36:54,780 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:36:55,403 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:36:55,648 WARN  [AbstractRemotingServer#66] [main] Server started on port 12200
+2021-02-20 16:50:28,652 WARN  [AbstractConnectionFactory#185] [SOFA-CLI-CONN-com.demo.service.UserService-3-T1] [client side] bolt netty low water mark is 32768 bytes, high water mark is 65536 bytes
+2021-02-20 16:50:29,282 WARN  [AbstractRemotingServer#64] [main] Prepare to start server on port 12200 
+2021-02-20 16:50:29,531 WARN  [AbstractRemotingServer#66] [main] Server started on port 12200

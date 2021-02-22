@@ -1,0 +1,568 @@
+2021-02-20 16:06:49.298 ERROR 21012 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:242) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:218) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:202) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:172) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:338) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:314) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.Springboot2MybatisDemoApplication.main(Springboot2MybatisDemoApplication.java:20) [classes/:na]
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321) ~[spring-core-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194) ~[spring-core-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:293) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:429) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:372) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:293) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:254) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:214) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	... 18 common frames omitted
+
+2021-02-20 16:08:58.342 ERROR 19720 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'logging.level' to java.util.Map<java.lang.String, java.lang.String>
+	at org.springframework.boot.context.properties.bind.Binder.handleBindError(Binder.java:242) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:218) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:202) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:172) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.setLogLevels(LoggingApplicationListener.java:338) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initializeFinalLoggingLevels(LoggingApplicationListener.java:314) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.initialize(LoggingApplicationListener.java:265) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEnvironmentPreparedEvent(LoggingApplicationListener.java:226) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.logging.LoggingApplicationListener.onApplicationEvent(LoggingApplicationListener.java:203) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:127) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.context.event.EventPublishingRunListener.environmentPrepared(EventPublishingRunListener.java:76) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplicationRunListeners.environmentPrepared(SpringApplicationRunListeners.java:53) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.prepareEnvironment(SpringApplication.java:342) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:305) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1204) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.Springboot2MybatisDemoApplication.main(Springboot2MybatisDemoApplication.java:20) [classes/:na]
+Caused by: org.springframework.core.convert.ConverterNotFoundException: No converter found capable of converting from type [java.lang.String] to type [java.util.Map<java.lang.String, java.lang.String>]
+	at org.springframework.core.convert.support.GenericConversionService.handleConverterNotFound(GenericConversionService.java:321) ~[spring-core-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.core.convert.support.GenericConversionService.convert(GenericConversionService.java:194) ~[spring-core-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter$CompositeConversionService.convert(BindConverter.java:170) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:96) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.BindConverter.convert(BindConverter.java:88) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.MapBinder.bindAggregate(MapBinder.java:64) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.AggregateBinder.bind(AggregateBinder.java:56) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.lambda$bindAggregate$2(Binder.java:293) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.withIncreasedDepth(Binder.java:429) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder$Context.access$100(Binder.java:372) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindAggregate(Binder.java:293) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bindObject(Binder.java:254) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.context.properties.bind.Binder.bind(Binder.java:214) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	... 18 common frames omitted
+
+2021-02-20 16:09:15.317  INFO 632 --- [main] c.d.Springboot2MybatisDemoApplication    : Starting Springboot2MybatisDemoApplication on LAPTOP-75M31AOI with PID 632 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:09:15.317  INFO 632 --- [main] c.d.Springboot2MybatisDemoApplication    : No active profile set, falling back to default profiles: default
+2021-02-20 16:09:16.206  INFO 632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:09:16.221  INFO 632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:09:16.221  INFO 632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:09:16.353  INFO 632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:09:16.353  INFO 632 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1004 ms
+2021-02-20 16:09:16.410  WARN 632 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userServiceImpl' defined in file [D:\SofaTest\springboot2-mybatis-demo\target\classes\com\demo\service\user\impl\UserServiceImpl.class]: 'userServiceImpl' depends on missing bean 'com.demo.dao.UserDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'com.demo.dao.UserDao' available
+2021-02-20 16:09:16.426  INFO 632 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:09:16.442  INFO 632 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:09:16.491 ERROR 632 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userService in com.demo.controller.CardController required a bean named 'com.demo.dao.UserDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean named 'com.demo.dao.UserDao' in your configuration.
+
+2021-02-20 16:11:00.101  INFO 20184 --- [main] c.d.Springboot2MybatisDemoApplication    : Starting Springboot2MybatisDemoApplication on LAPTOP-75M31AOI with PID 20184 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:11:00.102  INFO 20184 --- [main] c.d.Springboot2MybatisDemoApplication    : No active profile set, falling back to default profiles: default
+2021-02-20 16:11:00.985  INFO 20184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:11:01.001  INFO 20184 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:11:01.001  INFO 20184 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:11:01.116  INFO 20184 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:11:01.116  INFO 20184 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 971 ms
+2021-02-20 16:11:01.215  INFO 20184 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:11:01.759  INFO 20184 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:11:02.498  INFO 20184 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:11:03.179  INFO 20184 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-20 16:11:03.179  INFO 20184 --- [main] c.d.Springboot2MybatisDemoApplication    : Started Springboot2MybatisDemoApplication in 3.589 seconds (JVM running for 4.271)
+2021-02-20 16:11:44.356  INFO 1848 --- [main] c.d.Springboot2MybatisDemoApplication    : Starting Springboot2MybatisDemoApplication on LAPTOP-75M31AOI with PID 1848 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:11:44.357  INFO 1848 --- [main] c.d.Springboot2MybatisDemoApplication    : No active profile set, falling back to default profiles: default
+2021-02-20 16:11:45.337  INFO 1848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:11:45.353  INFO 1848 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:11:45.353  INFO 1848 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:11:45.450  INFO 1848 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:11:45.450  INFO 1848 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1048 ms
+2021-02-20 16:11:45.549  INFO 1848 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:11:46.119  INFO 1848 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:11:46.798  INFO 1848 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:11:47.505  INFO 1848 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-20 16:11:47.505  INFO 1848 --- [main] c.d.Springboot2MybatisDemoApplication    : Started Springboot2MybatisDemoApplication in 3.665 seconds (JVM running for 4.358)
+2021-02-20 16:22:22.174  INFO 5868 --- [main] com.demo.client.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 5868 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:22:22.174  INFO 5868 --- [main] com.demo.client.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:22:22.298  WARN 5868 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-20 16:22:22.558 ERROR 5868 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.client.UserServiceClient.main(UserServiceClient.java:24) [classes/:na]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:203) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	... 6 common frames omitted
+
+2021-02-20 16:26:52.135  INFO 16628 --- [main] com.demo.client.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 16628 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:26:52.135  INFO 16628 --- [main] com.demo.client.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:26:53.064  WARN 16628 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.client]' package. Please check your configuration.
+2021-02-20 16:26:53.754  INFO 16628 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:26:53.787  INFO 16628 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:26:53.787  INFO 16628 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:26:54.038  INFO 16628 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:26:54.038  INFO 16628 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1834 ms
+2021-02-20 16:26:54.283  INFO 16628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:26:54.430  INFO 16628 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:26:55.120  INFO 16628 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:26:55.966 ERROR 16628 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.client.UserServiceClient.main(UserServiceClient.java:25) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_271]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	... 12 common frames omitted
+
+2021-02-20 16:26:55.966  INFO 16628 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:26:55.966  INFO 16628 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:26:55.966 ERROR 16628 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-02-20 16:26:55.983  INFO 16628 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-20 16:26:55.983  INFO 16628 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:27:55.023  INFO 6396 --- [main] com.demo.client.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 6396 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:27:55.023  INFO 6396 --- [main] com.demo.client.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:27:55.951  WARN 6396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.client]' package. Please check your configuration.
+2021-02-20 16:27:56.681  INFO 6396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:27:56.698  INFO 6396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:27:56.713  INFO 6396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:27:56.885  INFO 6396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:27:56.885  INFO 6396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1804 ms
+2021-02-20 16:27:57.156  INFO 6396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:27:57.335  INFO 6396 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:27:57.997  INFO 6396 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:27:58.825  INFO 6396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 16:27:58.825  INFO 6396 --- [main] com.demo.client.UserServiceClient        : Started UserServiceClient in 4.545 seconds (JVM running for 5.021)
+2021-02-20 16:28:46.555  INFO 20536 --- [main] com.demo.client.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 20536 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:28:46.555  INFO 20536 --- [main] com.demo.client.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:28:47.646  WARN 20536 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.client]' package. Please check your configuration.
+2021-02-20 16:28:48.445  INFO 20536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:28:48.477  INFO 20536 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:28:48.478  INFO 20536 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:28:48.659  INFO 20536 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:28:48.659  INFO 20536 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1958 ms
+2021-02-20 16:28:48.949  INFO 20536 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:28:49.124  INFO 20536 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:28:49.875  INFO 20536 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:28:50.700  INFO 20536 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 16:28:50.716  INFO 20536 --- [main] com.demo.client.UserServiceClient        : Started UserServiceClient in 5.292 seconds (JVM running for 6.029)
+2021-02-20 16:29:43.487  INFO 21080 --- [main] com.demo.UserServiceClient               : Starting UserServiceClient on LAPTOP-75M31AOI with PID 21080 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:29:43.487  INFO 21080 --- [main] com.demo.UserServiceClient               : No active profile set, falling back to default profiles: default
+2021-02-20 16:29:44.385  INFO 21080 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:29:44.401  INFO 21080 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:29:44.416  INFO 21080 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:29:44.530  INFO 21080 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:29:44.530  INFO 21080 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1011 ms
+2021-02-20 16:29:44.612  INFO 21080 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:29:45.145  INFO 21080 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:29:45.831  INFO 21080 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:29:46.483  INFO 21080 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:29:46.483  INFO 21080 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:29:46.499 ERROR 21080 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+com.alipay.sofa.rpc.core.exception.SofaRpcRuntimeException: RPC-010000025: 启动 bolt 服务失败.请查看 bolt 日志获取更多细节. 
+	at com.alipay.sofa.rpc.server.bolt.BoltServer.start(BoltServer.java:133) ~[sofa-rpc-all-5.7.6.jar:5.7.6]
+	at com.alipay.sofa.rpc.boot.container.ServerConfigContainer.startServers(ServerConfigContainer.java:108) ~[rpc-sofa-boot-3.6.0.jar:3.6.0]
+	at com.alipay.sofa.rpc.boot.context.SofaBootRpcStartListener.onApplicationEvent(SofaBootRpcStartListener.java:76) ~[rpc-sofa-boot-3.6.0.jar:3.6.0]
+	at com.alipay.sofa.rpc.boot.context.SofaBootRpcStartListener.onApplicationEvent(SofaBootRpcStartListener.java:41) ~[rpc-sofa-boot-3.6.0.jar:3.6.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at com.alipay.sofa.rpc.boot.context.ApplicationContextRefreshedListener.onApplicationEvent(ApplicationContextRefreshedListener.java:38) ~[rpc-sofa-boot-3.6.0.jar:3.6.0]
+	at com.alipay.sofa.rpc.boot.context.ApplicationContextRefreshedListener.onApplicationEvent(ApplicationContextRefreshedListener.java:31) ~[rpc-sofa-boot-3.6.0.jar:3.6.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:402) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:359) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:896) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.UserServiceClient.main(UserServiceClient.java:21) [classes/:na]
+Caused by: java.lang.IllegalStateException: ERROR: Failed to start the Server!
+	at com.alipay.remoting.AbstractRemotingServer.start(AbstractRemotingServer.java:74) ~[bolt-1.5.6.jar:na]
+	at com.alipay.sofa.rpc.server.bolt.BoltServer.start(BoltServer.java:116) ~[sofa-rpc-all-5.7.6.jar:5.7.6]
+	... 23 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:1.8.0_271]
+	at io.netty.channel.socket.nio.NioServerSocketChannel.doBind(NioServerSocketChannel.java:134) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannel$AbstractUnsafe.bind(AbstractChannel.java:550) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.bind(DefaultChannelPipeline.java:1334) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.invokeBind(AbstractChannelHandlerContext.java:504) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.bind(AbstractChannelHandlerContext.java:489) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.DefaultChannelPipeline.bind(DefaultChannelPipeline.java:973) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.AbstractChannel.bind(AbstractChannel.java:248) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.bootstrap.AbstractBootstrap$2.run(AbstractBootstrap.java:348) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-all-4.1.45.Final.jar:4.1.45.Final]
+	at java.lang.Thread.run(Thread.java:748) ~[na:1.8.0_271]
+
+2021-02-20 16:29:46.499  INFO 21080 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:29:46.499  INFO 21080 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-20 16:31:19.913  INFO 20788 --- [main] com.demo.UserServiceServer               : Starting UserServiceServer on LAPTOP-75M31AOI with PID 20788 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:31:19.913  INFO 20788 --- [main] com.demo.UserServiceServer               : No active profile set, falling back to default profiles: default
+2021-02-20 16:31:20.015  WARN 20788 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+2021-02-20 16:31:20.285 ERROR 20788 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.UserServiceServer.main(UserServiceServer.java:26) [classes/:na]
+Caused by: org.springframework.context.ApplicationContextException: Unable to start ServletWebServerApplicationContext due to missing ServletWebServerFactory bean.
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:203) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	... 6 common frames omitted
+
+2021-02-20 16:31:58.137  INFO 20668 --- [main] com.demo.UserServiceServer               : Starting UserServiceServer on LAPTOP-75M31AOI with PID 20668 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:31:58.138  INFO 20668 --- [main] com.demo.UserServiceServer               : No active profile set, falling back to default profiles: default
+2021-02-20 16:31:58.377  WARN 20668 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.demo.UserServiceServer]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userServiceClient' for bean class [com.demo.client.UserServiceClient] conflicts with existing, non-compatible bean definition of same name and class [com.demo.UserServiceClient]
+2021-02-20 16:31:58.507 ERROR 20668 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.demo.UserServiceServer]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userServiceClient' for bean class [com.demo.client.UserServiceClient] conflicts with existing, non-compatible bean definition of same name and class [com.demo.UserServiceClient]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:181) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:315) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:232) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:275) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:95) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:705) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:531) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) ~[spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.UserServiceServer.main(UserServiceServer.java:28) [classes/:na]
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'userServiceClient' for bean class [com.demo.client.UserServiceClient] conflicts with existing, non-compatible bean definition of same name and class [com.demo.UserServiceClient]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:348) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:286) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:287) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:242) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:199) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:167) ~[spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	... 11 common frames omitted
+
+2021-02-20 16:33:50.472  INFO 15272 --- [main] com.demo.Server.UserServiceServer        : Starting UserServiceServer on LAPTOP-75M31AOI with PID 15272 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:33:50.472  INFO 15272 --- [main] com.demo.Server.UserServiceServer        : No active profile set, falling back to default profiles: default
+2021-02-20 16:33:51.383  WARN 15272 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.Server]' package. Please check your configuration.
+2021-02-20 16:33:52.091  INFO 15272 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:33:52.140  INFO 15272 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:33:52.140  INFO 15272 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:33:52.325  INFO 15272 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:33:52.325  INFO 15272 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1786 ms
+2021-02-20 16:33:52.600  INFO 15272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:33:52.754  INFO 15272 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:33:53.422  INFO 15272 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:33:54.223 ERROR 15272 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.Server.UserServiceServer.main(UserServiceServer.java:24) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_271]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	... 12 common frames omitted
+
+2021-02-20 16:33:54.224  INFO 15272 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:33:54.224  INFO 15272 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:33:54.224 ERROR 15272 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-02-20 16:33:54.240  INFO 15272 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-20 16:33:54.240  INFO 15272 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:34:09.978  INFO 20420 --- [main] com.demo.Server.UserServiceServer        : Starting UserServiceServer on LAPTOP-75M31AOI with PID 20420 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:34:09.978  INFO 20420 --- [main] com.demo.Server.UserServiceServer        : No active profile set, falling back to default profiles: default
+2021-02-20 16:34:11.079  WARN 20420 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.Server]' package. Please check your configuration.
+2021-02-20 16:34:11.854  INFO 20420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:34:11.887  INFO 20420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:34:11.887  INFO 20420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:34:12.073  INFO 20420 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:34:12.073  INFO 20420 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2037 ms
+2021-02-20 16:34:12.350  INFO 20420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:34:12.498  INFO 20420 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:34:13.203  INFO 20420 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:34:14.237  INFO 20420 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-02-20 16:34:14.255  INFO 20420 --- [main] com.demo.Server.UserServiceServer        : Started UserServiceServer in 4.982 seconds (JVM running for 5.493)
+2021-02-20 16:34:21.554  INFO 10200 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 10200 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:34:21.555  INFO 10200 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:34:22.083  WARN 10200 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.Server]' package. Please check your configuration.
+2021-02-20 16:34:22.424  INFO 10200 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-02-20 16:34:22.440  INFO 10200 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:34:22.440  INFO 10200 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:34:22.567  INFO 10200 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:34:22.567  INFO 10200 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 986 ms
+2021-02-20 16:34:22.756  INFO 10200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:34:22.885  INFO 10200 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:34:23.364  INFO 10200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:34:23.844 ERROR 10200 --- [main] org.apache.catalina.util.LifecycleBase   : Failed to start component [Connector[HTTP/1.1-8080]]
+
+org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1067) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:227) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.addPreviouslyRemovedConnectors(TomcatWebServer.java:263) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.start(TomcatWebServer.java:195) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.startWebServer(ServletWebServerApplicationContext.java:297) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:163) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:552) [spring-context-5.1.14.RELEASE.jar:5.1.14.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:744) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:391) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:312) [spring-boot-2.1.13.RELEASE.jar:2.1.13.RELEASE]
+	at com.demo.Server.UserServiceClient.main(UserServiceClient.java:21) [classes/:na]
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:444) ~[na:1.8.0_271]
+	at sun.nio.ch.Net.bind(Net.java:436) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:225) ~[na:1.8.0_271]
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74) ~[na:1.8.0_271]
+	at org.apache.tomcat.util.net.NioEndpoint.initServerSocket(NioEndpoint.java:228) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:211) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.bindWithCleanup(AbstractEndpoint.java:1141) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1227) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:592) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1064) ~[tomcat-embed-core-9.0.37.jar:9.0.37]
+	... 12 common frames omitted
+
+2021-02-20 16:34:23.848  INFO 10200 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:34:23.854  INFO 10200 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:34:23.858 ERROR 10200 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 8080 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 8080, or configure this application to listen on another port.
+
+2021-02-20 16:34:23.863  INFO 10200 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2021-02-20 16:34:23.871  INFO 10200 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:34:51.180  INFO 20764 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 20764 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:34:51.180  INFO 20764 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:34:51.718  WARN 20764 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.Server]' package. Please check your configuration.
+2021-02-20 16:34:52.101  INFO 20764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:34:52.117  INFO 20764 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:34:52.117  INFO 20764 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:34:52.238  INFO 20764 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:34:52.238  INFO 20764 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1026 ms
+2021-02-20 16:34:52.425  INFO 20764 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:34:52.563  INFO 20764 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:34:53.054  INFO 20764 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:34:53.569  INFO 20764 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 16:34:53.569  INFO 20764 --- [main] com.demo.Server.UserServiceClient        : Started UserServiceClient in 2.849 seconds (JVM running for 3.57)
+2021-02-20 16:35:54.949  INFO 16804 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 16804 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:35:54.949  INFO 16804 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:35:55.486  WARN 16804 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.demo.Server]' package. Please check your configuration.
+2021-02-20 16:35:55.842  INFO 16804 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:35:55.858  INFO 16804 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:35:55.858  INFO 16804 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:35:55.990  INFO 16804 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:35:55.990  INFO 16804 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1002 ms
+2021-02-20 16:35:56.039  WARN 16804 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cardService': Unsatisfied dependency expressed through field 'userDao'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.demo.dao.UserDao' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2021-02-20 16:35:56.039  INFO 16804 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-02-20 16:35:56.056  INFO 16804 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-02-20 16:35:56.155 ERROR 16804 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field userDao in com.demo.service.impl.CardServiceImpl required a bean of type 'com.demo.dao.UserDao' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'com.demo.dao.UserDao' in your configuration.
+
+2021-02-20 16:36:33.684  INFO 8472 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 8472 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:36:33.685  INFO 8472 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:36:34.575  INFO 8472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:36:34.594  INFO 8472 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:36:34.594  INFO 8472 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:36:34.725  INFO 8472 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:36:34.725  INFO 8472 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1000 ms
+2021-02-20 16:36:34.807  INFO 8472 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:36:35.354  INFO 8472 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:36:36.022  INFO 8472 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:36:36.702  INFO 8472 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 16:36:36.702  INFO 8472 --- [main] com.demo.Server.UserServiceClient        : Started UserServiceClient in 3.524 seconds (JVM running for 4.269)
+2021-02-20 16:36:52.521 DEBUG 15304 --- [background-preinit] .h.v.m.ResourceBundleMessageInterpolator : Loaded expression factory via original TCCL
+2021-02-20 16:36:52.696  INFO 15304 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 15304 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:36:52.696  INFO 15304 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:36:53.557  INFO 15304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2021-02-20 16:36:53.584  INFO 15304 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:36:53.584  INFO 15304 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:36:53.714  INFO 15304 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:36:53.714  INFO 15304 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 970 ms
+2021-02-20 16:36:53.778  INFO 15304 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:36:54.326  INFO 15304 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:36:55.018  INFO 15304 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:36:55.680  INFO 15304 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2021-02-20 16:36:55.680  INFO 15304 --- [main] com.demo.Server.UserServiceClient        : Started UserServiceClient in 3.483 seconds (JVM running for 4.194)
+2021-02-20 16:50:26.506  INFO 2404 --- [main] com.demo.Server.UserServiceClient        : Starting UserServiceClient on LAPTOP-75M31AOI with PID 2404 (D:\SofaTest\springboot2-mybatis-demo\target\classes started by wuyiyang in D:\SofaTest\springboot2-mybatis-demo)
+2021-02-20 16:50:26.507  INFO 2404 --- [main] com.demo.Server.UserServiceClient        : No active profile set, falling back to default profiles: default
+2021-02-20 16:50:27.388  INFO 2404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2021-02-20 16:50:27.408  INFO 2404 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-02-20 16:50:27.408  INFO 2404 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2021-02-20 16:50:27.528  INFO 2404 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-02-20 16:50:27.529  INFO 2404 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 987 ms
+2021-02-20 16:50:27.616  INFO 2404 --- [main] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2021-02-20 16:50:28.175  INFO 2404 --- [main] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2021-02-20 16:50:28.888  INFO 2404 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-02-20 16:50:29.582  INFO 2404 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2021-02-20 16:50:29.585  INFO 2404 --- [main] com.demo.Server.UserServiceClient        : Started UserServiceClient in 3.569 seconds (JVM running for 4.281)

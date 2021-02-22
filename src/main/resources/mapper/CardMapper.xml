@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
-<mapper namespace="com.winterchen.dao.CardDao" >
+<mapper namespace="com.demo.dao.CardDao" >
     <sql id="CARD_TABLE">
     t_card
   </sql>
@@ -9,18 +9,18 @@
     userId,cardId,func_bmp
   </sql>
 
-    <insert id="bindCard" parameterType="com.winterchen.model.CardDomain" >
+    <insert id="bindCard" parameterType="com.demo.model.CardDomain" >
     INSERT INTO t_card(userId,cardId,func_bmp)values (#{userId},#{cardId},1)
   </insert>
 
-    <select id="selectUsers" resultType="com.winterchen.model.CardDomain">
+    <select id="selectUsers" resultType="com.demo.model.CardDomain">
         SELECT
         userId,cardId,func_bmp
         FROM
         t_card
     </select>
 
-    <select id="queryCardByUserId" resultType="com.winterchen.model.CardDomain">
+    <select id="queryCardByUserId" resultType="com.demo.model.CardDomain">
         select
          userId,cardId,func_bmp
         from
@@ -42,7 +42,7 @@
         t_card
         WHERE userId = #{userId} and cardId = #{cardId}
     </select>
-    <select id="queryCard" parameterType="java.lang.Integer" resultType="com.winterchen.model.CardDomain">
+    <select id="queryCard" parameterType="java.lang.Integer" resultType="com.demo.model.CardDomain">
         SELECT
          userId,cardId,func_bmp
         FROM
